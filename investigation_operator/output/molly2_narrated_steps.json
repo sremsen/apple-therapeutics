@@ -1,0 +1,119 @@
+[
+  {
+    "step": "Inspecting the Apple",
+    "task": "Initial Visual Check",
+    "action": "The operator inspects the apple for bruising and judges that it all looks pretty good.",
+    "start_sec": 8.0,
+    "end_sec": 18.0,
+    "condition": "checking for bruising",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cutting the First Section",
+    "task": "Starting the Cut",
+    "action": "The operator makes one cut into the large apple to start.",
+    "start_sec": 0.0,
+    "end_sec": 8.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the First Section",
+    "task": "Starting the Cut",
+    "action": "The operator starts cutting the apple.",
+    "start_sec": 8.0,
+    "end_sec": 18.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the First Section",
+    "task": "Starting the Cut",
+    "action": "The operator does not take the little small piece.",
+    "start_sec": 8.0,
+    "end_sec": 18.0,
+    "condition": "a little small piece",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Cutting the First Section",
+    "task": "Producing Slices",
+    "action": "The operator gets a lot of good slices from the apple.",
+    "start_sec": 18.0,
+    "end_sec": 22.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Maintaining Knife and Checking Technique",
+    "task": "Knife Maintenance",
+    "action": "The operator scrapes the slices off the knife after getting a couple of them, using this as a way to quickly check they are cutting correctly.",
+    "start_sec": 22.0,
+    "end_sec": 30.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting Additional Chunks",
+    "task": "Cutting Big Chunk",
+    "action": "The operator cuts the apple into a big chunk again.",
+    "start_sec": 30.0,
+    "end_sec": 34.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting Additional Chunks",
+    "task": "Cutting Big Chunk",
+    "action": "The operator makes sure not to slice too close to the core.",
+    "start_sec": 34.0,
+    "end_sec": 37.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Handling Bruised Piece",
+    "task": "Responding to Bruising",
+    "action": "The operator notices a tiny bit of bruising and cuts the apple in half in response.",
+    "start_sec": 37.0,
+    "end_sec": 46.0,
+    "condition": "a tiny bit of bruising",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Handling Bruised Piece",
+    "task": "Responding to Bruising",
+    "action": "The operator inspects the cut half and decides it is fine, even though they thought it would be worse.",
+    "start_sec": 46.0,
+    "end_sec": 55.0,
+    "condition": "expected the bruising to be worse",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Further Inspection and Slice Judgment",
+    "task": "Inspecting Pieces",
+    "action": "The operator inspects the piece and judges that it looks okay.",
+    "start_sec": 55.0,
+    "end_sec": 58.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Further Inspection and Slice Judgment",
+    "task": "Judging Slice Thickness",
+    "action": "The operator judges a slice to be too thin and decides not to take it.",
+    "start_sec": 58.0,
+    "end_sec": 61.0,
+    "condition": "the slice was too thin",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Concluding Segment",
+    "task": "Pausing for Next Run",
+    "action": "The operator pauses to do another run for these slices.",
+    "start_sec": 67.0,
+    "end_sec": 70.0,
+    "condition": null,
+    "condition_response": null
+  }
+]

@@ -1,0 +1,22 @@
+# Source video stays out of git - too large. The extracted frames are committed
+# (18 MB), so the frame-level evidence behind the findings is checkable.
+investigation_operator/original_videos/
+investigation_operator/videos/*
+!investigation_operator/videos/manifest.csv
+
+# The baseline SOP as a Word document is comparison material, not a deliverable,
+# and regenerates with 06_sop_to_docx.py --group baseline.
+investigation_operator/sops/*.docx
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# Whisper's raw segment output. transcripts/*.txt is what the pipeline reads;
+# the JSON is kept locally as provenance but is not part of the artifact.
+investigation_operator/transcripts/*.json
+
+# Working notes, not part of the deliverable.
+NOTION_CHECKLIST.md

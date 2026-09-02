@@ -1,0 +1,11 @@
+# The analysis layer. This is all you need to reproduce every figure and finding.
+pandas
+numpy
+scipy
+
+# Only needed to re-run the pipeline itself, which also needs the source videos
+# and an API key.
+python-docx
+Pillow
+anthropic
+mlx-whisper

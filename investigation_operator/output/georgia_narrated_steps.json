@@ -1,0 +1,65 @@
+[
+  {
+    "step": "Preparation",
+    "task": "Select knife",
+    "action": "The operator picks up a knife but stops, saying they don't want that knife.",
+    "start_sec": 6.5,
+    "end_sec": 10.6,
+    "condition": "realizes it's not the knife they want",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Preparation",
+    "task": "Select knife",
+    "action": "The operator picks up this one to use instead.",
+    "start_sec": 10.6,
+    "end_sec": 10.6,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the apple",
+    "task": "Cut apple",
+    "action": "The operator cuts from the top of the apple.",
+    "start_sec": 10.6,
+    "end_sec": 19.4,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the apple",
+    "task": "Cut apple",
+    "action": "The operator cuts off these ends to make them a little more even.",
+    "start_sec": 19.4,
+    "end_sec": 22.6,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the apple",
+    "task": "Cut apple",
+    "action": "The operator does this further cut on the apple.",
+    "start_sec": 22.6,
+    "end_sec": 27.2,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the apple",
+    "task": "Finish cutting",
+    "action": "The operator completes the cut, saying 'there we go'.",
+    "start_sec": 27.2,
+    "end_sec": 30.1,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the apple",
+    "task": "Finish cutting",
+    "action": "The operator states that the apple is done.",
+    "start_sec": 30.1,
+    "end_sec": 30.1,
+    "condition": null,
+    "condition_response": null
+  }
+]

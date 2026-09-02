@@ -1,0 +1,4 @@
+[0.0s] Alright, next run. Here we go. That's my apple.
+[10.0s] Just cutting it like this.
+[15.0s] That's fine.
+[17.0s] Alright, that should be good.

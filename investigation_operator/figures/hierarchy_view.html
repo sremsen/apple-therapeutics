@@ -1,0 +1,210 @@
+<title>Anatomy of a Cut</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#faf9f7;--border:#e3e1dc;--text:#16181a;--text-2:#5d6266;--text-3:#8d9296;
+      --shadow:0 1px 2px rgba(20,22,24,.05),0 6px 18px rgba(20,22,24,.05)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c0d0e;--border:#25282a;--text:#f2f3f2;--text-2:#9aa0a3;--text-3:#6e7478;
+  --shadow:0 1px 2px rgba(0,0,0,.45)}}
+:root[data-theme="dark"]{--bg:#0c0d0e;--border:#25282a;--text:#f2f3f2;--text-2:#9aa0a3;
+  --text-3:#6e7478;--shadow:0 1px 2px rgba(0,0,0,.45)}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,sans-serif;
+     font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;letter-spacing:-.008em}
+.page{max-width:1000px;margin:0 auto;padding:64px 28px 96px;display:flex;flex-direction:column;gap:46px}
+.eyebrow{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.1em;
+         text-transform:uppercase;color:var(--text-3)}
+h1{margin:0;font-size:32px;font-weight:600;letter-spacing:-.024em;text-wrap:balance}
+.lede{margin:0;max-width:64ch;color:var(--text-2);font-size:15.5px}
+h2{margin:0;font-size:12px;font-weight:550;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3)}
+p{margin:0;color:var(--text-2);max-width:68ch}
+strong{color:var(--text);font-weight:550}
+section{display:flex;flex-direction:column;gap:16px}
+
+/* One SVG on a white ground in both themes: it scales rather than scrolling,
+   holds an exact aspect ratio, and screenshots cleanly. */
+.chart{background:#fff;border:1px solid #e3e1dc;border-radius:12px;box-shadow:var(--shadow);
+       padding:22px 24px;width:min(1300px,calc(100vw - 44px));margin-left:50%;
+       transform:translateX(-50%)}
+.chart svg{display:block;width:100%;height:auto}
+.b-step{fill:#c3c6bc;stroke:#a5a999;stroke-width:2;stroke-dasharray:0}
+.b-task{fill:#bccbcd;stroke:#9ab0b3;stroke-width:2}
+.k{fill:#3d4548;opacity:.9}
+.k-hl{fill:#b3dd1f;stroke:#7d9a12;stroke-width:1}
+.d-adj{fill:#b8532f;stroke:#b8532f;stroke-width:1.5}
+.d-dis{fill:#fff;stroke:#b8532f;stroke-width:1.5}
+.lead{stroke:#7d9a12;stroke-width:1;opacity:.6}
+.rule{stroke:#e0ded8;stroke-width:1}
+text{font-family:Inter,system-ui,sans-serif}
+.t-step{font-size:13.5px;font-weight:600;fill:#16181a;letter-spacing:-.01em}
+.t-sub{font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.07em;fill:#5a5f62}
+.t-task{font-family:"JetBrains Mono",monospace;font-size:11.5px;font-weight:500;fill:#16181a}
+.t-call{font-size:12.5px;font-weight:600;fill:#16181a}
+.t-callsub{font-size:11px;fill:#5a5f62}
+.t-keyn{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:500;fill:#16181a}
+.t-key{font-size:12px;fill:#5a5f62}
+.t-legend{font-size:11.5px;fill:#5a5f62}
+.counts{display:flex;gap:26px;flex-wrap:wrap;font-family:"JetBrains Mono",monospace;
+        font-size:11.5px;color:var(--text-3);letter-spacing:.03em}
+.counts b{color:var(--text);font-weight:500}
+@media(max-width:680px){.page{padding:40px 18px 64px}h1{font-size:25px}
+  .chart{width:calc(100vw - 32px);padding:14px}}
+</style>
+
+<div class="page">
+<header style="display:flex;flex-direction:column;gap:13px">
+  <div class="eyebrow">apple-therapeutics &middot; operator investigation</div>
+  <h1>Anatomy of a Cut</h1>
+  <p class="lede">One expert operator&rsquo;s procedure, decomposed. Three runs on video became
+  28 atomic actions, grouped into 10 tasks and 4 steps &mdash; and 13 points
+  where she stops to make a judgment.</p>
+</header>
+
+<section>
+  <div class="chart">
+    <svg viewBox="0 0 1202 676" role="img"
+         aria-label="An expert operator's procedure broken into 4 steps, 10 tasks and 28 atomic actions, with the control-loop stages and judgment points marked.">
+  <rect class="b-step" x="0.0" y="34" width="150.0" height="86" rx="3"/>
+  <text class="t-step" x="11.0" y="60">Prepare the apple</text>
+  <text class="t-sub" x="11.0" y="108">STEP 1</text>
+  <rect class="b-step" x="196.0" y="34" width="274.0" height="86" rx="3"/>
+  <text class="t-step" x="207.0" y="60">Cut a section from the apple</text>
+  <text class="t-sub" x="207.0" y="108">STEP 2</text>
+  <rect class="b-step" x="516.0" y="34" width="382.0" height="86" rx="3"/>
+  <text class="t-step" x="527.0" y="60">Cut slices from the section</text>
+  <text class="t-sub" x="527.0" y="108">STEP 3</text>
+  <rect class="b-step" x="944.0" y="34" width="258.0" height="86" rx="3"/>
+  <text class="t-step" x="955.0" y="60">Clear the board</text>
+  <text class="t-sub" x="955.0" y="108">STEP 4</text>
+  <rect class="b-task" x="0.0" y="132" width="62.0" height="62" rx="3"/>
+  <text class="t-task" x="9.0" y="154">1.1</text>
+  <circle class="d-adj" cx="25.5" cy="316" r="3.6"/>
+  <circle class="d-dis" cx="36.5" cy="316" r="3.6"/>
+  <rect class="b-task" x="88.0" y="132" width="62.0" height="62" rx="3"/>
+  <text class="t-task" x="97.0" y="154">1.2</text>
+  <rect class="b-task" x="196.0" y="132" width="62.0" height="62" rx="3"/>
+  <text class="t-task" x="205.0" y="154">2.1</text>
+  <circle class="d-adj" cx="227.0" cy="316" r="3.6"/>
+  <rect class="b-task" x="284.0" y="132" width="98.0" height="62" rx="3"/>
+  <text class="t-task" x="293.0" y="154">2.2</text>
+  <circle class="d-adj" cx="333.0" cy="316" r="3.6"/>
+  <rect class="b-task" x="408.0" y="132" width="62.0" height="62" rx="3"/>
+  <text class="t-task" x="417.0" y="154">2.3</text>
+  <circle class="d-dis" cx="439.0" cy="316" r="3.6"/>
+  <rect class="b-task" x="516.0" y="132" width="98.0" height="62" rx="3"/>
+  <text class="t-task" x="525.0" y="154">3.1</text>
+  <circle class="d-adj" cx="554.0" cy="316" r="3.6"/>
+  <circle class="d-dis" cx="565.0" cy="316" r="3.6"/>
+  <circle class="d-dis" cx="576.0" cy="316" r="3.6"/>
+  <rect class="b-task" x="640.0" y="132" width="170.0" height="62" rx="3"/>
+  <text class="t-task" x="649.0" y="154">3.2</text>
+  <circle class="d-dis" cx="708.5" cy="316" r="3.6"/>
+  <circle class="d-adj" cx="719.5" cy="316" r="3.6"/>
+  <circle class="d-adj" cx="730.5" cy="316" r="3.6"/>
+  <circle class="d-dis" cx="741.5" cy="316" r="3.6"/>
+  <rect class="b-task" x="836.0" y="132" width="62.0" height="62" rx="3"/>
+  <text class="t-task" x="845.0" y="154">3.3</text>
+  <circle class="d-adj" cx="867.0" cy="316" r="3.6"/>
+  <rect class="b-task" x="944.0" y="132" width="62.0" height="62" rx="3"/>
+  <text class="t-task" x="953.0" y="154">4.1</text>
+  <rect class="b-task" x="1032.0" y="132" width="170.0" height="62" rx="3"/>
+  <text class="t-task" x="1041.0" y="154">4.2</text>
+  <rect class="k" x="0.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="36.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="88.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="124.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k-hl" x="196.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="232.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="284.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="320.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="356.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="408.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="444.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k-hl" x="516.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="552.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="588.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k-hl" x="640.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k-hl" x="676.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="712.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="748.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="784.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k-hl" x="836.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="872.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="944.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="980.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="1032.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="1068.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="1104.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="1140.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <rect class="k" x="1176.0" y="208" width="26.0" height="92" rx="1.5"/>
+  <line class="lead" x1="209.0" y1="306" x2="209.0" y2="337"/>
+  <text class="t-call" x="201.0" y="350">Aim</text>
+  <text class="t-callsub" x="201.0" y="364">Sets the geometry of the cut</text>
+  <text class="t-callsub" x="201.0" y="376">before making it.</text>
+  <line class="lead" x1="529.0" y1="306" x2="529.0" y2="379"/>
+  <text class="t-call" x="521.0" y="392">Aim</text>
+  <text class="t-callsub" x="521.0" y="406">Sets the geometry of the cut</text>
+  <text class="t-callsub" x="521.0" y="418">before making it.</text>
+  <line class="lead" x1="653.0" y1="306" x2="653.0" y2="337"/>
+  <text class="t-call" x="645.0" y="350">See</text>
+  <text class="t-callsub" x="645.0" y="364">Keeps the size of each cut visible</text>
+  <text class="t-callsub" x="645.0" y="376">while cutting.</text>
+  <line class="lead" x1="689.0" y1="306" x2="689.0" y2="379"/>
+  <text class="t-call" x="681.0" y="392">Aim</text>
+  <text class="t-callsub" x="681.0" y="406">Sets the geometry of the cut</text>
+  <text class="t-callsub" x="681.0" y="418">before making it.</text>
+  <line class="lead" x1="849.0" y1="306" x2="849.0" y2="337"/>
+  <text class="t-call" x="841.0" y="350">Measure</text>
+  <text class="t-callsub" x="841.0" y="364">Checks the slice that was just</text>
+  <text class="t-callsub" x="841.0" y="376">produced.</text>
+  <line class="rule" x1="0" y1="452" x2="1202" y2="452"/>
+  <text class="t-keyn" x="6" y="484">1.1</text>
+  <text class="t-key" x="40" y="484">Inspect the apple</text>
+  <text class="t-keyn" x="6" y="505">1.2</text>
+  <text class="t-key" x="40" y="505">Position for the first cut</text>
+  <text class="t-keyn" x="6" y="526">2.1</text>
+  <text class="t-key" x="40" y="526">Position the apple or core piece for cutting</text>
+  <text class="t-keyn" x="6" y="547">2.2</text>
+  <text class="t-key" x="40" y="547">Cut the section free</text>
+  <text class="t-keyn" x="6" y="568">2.3</text>
+  <text class="t-key" x="40" y="568">Inspect and set aside the core piece</text>
+  <text class="t-keyn" x="606" y="484">3.1</text>
+  <text class="t-key" x="640" y="484">Trim scrap from the section</text>
+  <text class="t-keyn" x="606" y="505">3.2</text>
+  <text class="t-key" x="640" y="505">Cut slices from the section</text>
+  <text class="t-keyn" x="606" y="526">3.3</text>
+  <text class="t-key" x="640" y="526">Check and tidy the slices</text>
+  <text class="t-keyn" x="606" y="547">4.1</text>
+  <text class="t-key" x="640" y="547">Conclude slicing</text>
+  <text class="t-keyn" x="606" y="568">4.2</text>
+  <text class="t-key" x="640" y="568">Remove scrap and pieces from the board</text>
+  <rect class="k-hl" x="6" y="641" width="11" height="11" rx="2"/>
+  <text class="t-legend" x="25" y="650">Action carrying a stage of the control loop</text>
+  <circle class="d-adj" cx="312.7" cy="646.5" r="4.4"/>
+  <text class="t-legend" x="326.2" y="650">Judgment — acted on</text>
+  <circle class="d-dis" cx="460.3" cy="646.5" r="4.4"/>
+  <text class="t-legend" x="473.8" y="650">Judgment — evaluated, no change</text>
+    </svg>
+  </div>
+  <div class="counts">
+    <span><b>4</b> steps</span><span><b>10</b> tasks</span>
+    <span><b>28</b> atomic actions</span><span><b>13</b> judgment points</span>
+  </div>
+  <p>Widths are proportional to the number of actions each block contains, and gaps widen at task
+  and step boundaries &mdash; so the spacing of the barcode is the structure of the work, not decoration.</p>
+</section>
+
+<section>
+  <h2>Why decompose it this way</h2>
+  <p><strong>Steps</strong> are the phases a written procedure would name. <strong>Tasks</strong>
+  group contiguous actions serving one purpose. <strong>Atomic actions</strong> are single acts,
+  each two to five seconds of video.</p>
+  <p>The level a written SOP usually omits is the last one: the <strong>judgment points</strong>.
+  Three of the highlighted actions are how this operator controls her own output &mdash; she aims
+  the apple before cutting, keeps the cut visible while cutting, and checks the slice after. The
+  fourth stage is not an action at all. It is a decision: a slice judged too thin is set aside
+  rather than kept.</p>
+</section>
+</div>

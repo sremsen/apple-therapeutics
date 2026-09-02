@@ -1,0 +1,92 @@
+[
+  {
+    "step": "Preparation",
+    "task": "Select apparatus and apple",
+    "action": "The operator identifies this as a red apple and notes it is complete.",
+    "start_sec": 0.0,
+    "end_sec": 7.5,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Preparation",
+    "task": "Select apparatus and apple",
+    "action": "The operator gets the knife ready.",
+    "start_sec": 0.0,
+    "end_sec": 7.5,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Position the apple",
+    "action": "The operator makes sure the apple is flat.",
+    "start_sec": 7.5,
+    "end_sec": 13.1,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Cut initial section",
+    "action": "The operator cuts one big section.",
+    "start_sec": 7.5,
+    "end_sec": 13.1,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Cut initial section",
+    "action": "The operator discards that section.",
+    "start_sec": 13.1,
+    "end_sec": 17.6,
+    "condition": "a weird bruising situation on the section",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Cutting",
+    "task": "Cut remaining sections",
+    "action": "The operator makes sure the blade of the knife is against the apple.",
+    "start_sec": 17.6,
+    "end_sec": 22.9,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Cut remaining sections",
+    "action": "The operator cuts the apple into sections.",
+    "start_sec": 22.9,
+    "end_sec": 32.6,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Evaluate final piece",
+    "action": "The operator considers getting one more section out of the apple and judges this piece a little too small.",
+    "start_sec": 32.6,
+    "end_sec": 37.1,
+    "condition": "the piece being a little too small",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cutting",
+    "task": "Evaluate final piece",
+    "action": "The operator discards that piece.",
+    "start_sec": 37.1,
+    "end_sec": 39.0,
+    "condition": "the piece actually being too thin",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Completion",
+    "task": "Conclude apple",
+    "action": "The operator states that this is the end of this apple.",
+    "start_sec": 37.1,
+    "end_sec": 39.0,
+    "condition": null,
+    "condition_response": null
+  }
+]

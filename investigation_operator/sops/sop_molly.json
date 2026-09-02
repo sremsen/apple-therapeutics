@@ -1,0 +1,221 @@
+{
+  "title": "Standard Operating Procedure: Slicing an Apple into Sections and Slices",
+  "steps": [
+    {
+      "step": "Prepare the apple",
+      "purpose": "Confirm the apple is fit for use and get set up for the first cut.",
+      "repeats": null,
+      "observed_in_runs": 2,
+      "tasks": [
+        {
+          "task": "Inspect the apple",
+          "actions": [
+            "Pick up the apple and examine it for bruises, blemishes, or other defects.",
+            "Confirm the apple is whole and suitable for cutting."
+          ],
+          "decision_points": [
+            {
+              "condition": "a bruised spot is found on the apple's skin",
+              "response": "plan to cut on the bruised side of the apple first",
+              "type": "adjusted",
+              "observed_in_runs": 1
+            },
+            {
+              "condition": "the apple is inspected and found whole with no concerning defects",
+              "response": "proceed to cut the apple without alteration",
+              "type": "dismissed",
+              "observed_in_runs": 1
+            }
+          ]
+        },
+        {
+          "task": "Position for the first cut",
+          "actions": [
+            "Hold the apple upright on the board with one hand.",
+            "Bring the knife into position at the side of the apple with the other hand, ready to cut."
+          ],
+          "decision_points": []
+        }
+      ]
+    },
+    {
+      "step": "Cut a section from the apple",
+      "purpose": "Separate a large section from the apple or core piece so it can be trimmed and sliced.",
+      "repeats": "Repeat for each section cut from the apple (typically twice per apple, working around the core piece).",
+      "observed_in_runs": 3,
+      "tasks": [
+        {
+          "task": "Position the apple or core piece for cutting",
+          "actions": [
+            "Hold the apple or core piece upright in one hand, presenting an uncut face toward the blade.",
+            "Adjust your grip so the stem is clear of the intended cut line."
+          ],
+          "decision_points": [
+            {
+              "condition": "the apple's stem sits in the path of a straight cut",
+              "response": "angle the cut beside the stem rather than straight through the top of the apple",
+              "type": "adjusted",
+              "observed_in_runs": 1
+            }
+          ]
+        },
+        {
+          "task": "Cut the section free",
+          "actions": [
+            "Press the knife blade into the top of the apple or core piece, beside the stem if needed.",
+            "Draw the blade straight down through the apple in one stroke, cutting a section free from the core piece.",
+            "Lift the section and core piece apart slightly to check the cut."
+          ],
+          "decision_points": [
+            {
+              "condition": "the cut is running close to the core",
+              "response": "keep the cut away from the core to avoid slicing into it",
+              "type": "adjusted",
+              "observed_in_runs": 1
+            }
+          ]
+        },
+        {
+          "task": "Inspect and set aside the core piece",
+          "actions": [
+            "Turn the core piece to inspect its cut face for bruising.",
+            "Set the core piece aside on the board (e.g. top-left), skin side up, and keep it for cutting the next section."
+          ],
+          "decision_points": [
+            {
+              "condition": "the cut face shows minor bruising",
+              "response": "judge it acceptable and continue without further action",
+              "type": "dismissed",
+              "observed_in_runs": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Cut slices from the section",
+      "purpose": "Reduce each section into individual slices of consistent, usable size.",
+      "repeats": "Repeat for each section of the apple, and for each slice cut from that section.",
+      "observed_in_runs": 3,
+      "tasks": [
+        {
+          "task": "Trim scrap from the section",
+          "actions": [
+            "Hold the section upright in one hand, cut face oriented toward the blade.",
+            "Draw the blade down along the rounded or blemished edges of the section, cutting away thin scraps of skin.",
+            "Set trimmed scrap aside, separate from the slices."
+          ],
+          "decision_points": [
+            {
+              "condition": "the section shows bruising",
+              "response": "cut away the scrap of skin covering the bruise before slicing",
+              "type": "adjusted",
+              "observed_in_runs": 2
+            },
+            {
+              "condition": "a mark on the skin looks like frost rather than bruising",
+              "response": "continue slicing without additional trimming",
+              "type": "dismissed",
+              "observed_in_runs": 1
+            },
+            {
+              "condition": "bruising on the cut face turns out less severe than expected",
+              "response": "continue cutting the section as normal",
+              "type": "dismissed",
+              "observed_in_runs": 1
+            }
+          ]
+        },
+        {
+          "task": "Cut slices from the section",
+          "actions": [
+            "Start cutting from the bigger end of the section; avoid starting from the smaller end, as this makes it harder to judge the size of each cut and to see it clearly while cutting.",
+            "Cradle the section in one hand, presenting a fresh face to the blade.",
+            "Press the knife down through the section in a single stroke, cutting a slice free.",
+            "Guide or let the slice fall onto the board, joining the fan of slices.",
+            "Rotate the section slightly in hand after each cut to present a new face, and repeat until the section is reduced to a small remnant."
+          ],
+          "decision_points": [
+            {
+              "condition": "a slice starts coming out bigger than the others but is still within tolerance",
+              "response": "judge it acceptable and continue cutting the same way",
+              "type": "dismissed",
+              "observed_in_runs": 1
+            },
+            {
+              "condition": "a cut slice is judged too thin to count as usable product",
+              "response": "set it aside as scrap instead of keeping it with the slices",
+              "type": "adjusted",
+              "observed_in_runs": 2
+            },
+            {
+              "condition": "the remaining piece of the section becomes too small to cut further",
+              "response": "set it aside as scrap rather than continuing to cut it",
+              "type": "adjusted",
+              "observed_in_runs": 2
+            },
+            {
+              "condition": "the remaining piece looks small but is judged still large enough",
+              "response": "cut one more slice from it rather than discarding it",
+              "type": "dismissed",
+              "observed_in_runs": 1
+            }
+          ]
+        },
+        {
+          "task": "Check and tidy the slices",
+          "actions": [
+            "Periodically check both sides of the blade to confirm each slice is a consistent, correct size before making the next cut.",
+            "Use the flat of the knife blade, or the fingers, to nudge the fanned slices into a tidy row on the board as they accumulate."
+          ],
+          "decision_points": [
+            {
+              "condition": "the cut slices are spreading unevenly across the board",
+              "response": "nudge them into a tighter, aligned row using the flat of the blade or fingers",
+              "type": "adjusted",
+              "observed_in_runs": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": "Clear the board",
+      "purpose": "Finish work on the apple by clearing scrap, core piece, and slices from the board.",
+      "repeats": null,
+      "observed_in_runs": 1,
+      "tasks": [
+        {
+          "task": "Conclude slicing",
+          "actions": [
+            "Place the final slice into the fan of slices.",
+            "Withdraw both hands from the board, leaving the finished pieces in place."
+          ],
+          "decision_points": []
+        },
+        {
+          "task": "Remove scrap and pieces from the board",
+          "actions": [
+            "Lift the scrap from the corner of the board and carry it off the working area.",
+            "Lay the knife down flat near the edge of the board.",
+            "Gather the fanned slices and carry them off the board.",
+            "Lift the remaining scrap pieces and the core piece off the board in turn.",
+            "Sweep any remaining slice off the board, leaving only the knife."
+          ],
+          "decision_points": []
+        }
+      ]
+    }
+  ],
+  "synthesis_notes": [
+    "Merged run1's 'Prepare the apple' step and run3's 'Preparation' step into one 'Prepare the apple' step; run2 did not show an inspection phase, so this step is recorded as observed in 2 of 3 runs.",
+    "Collapsed the alternating 'section then slice' phases that occurred twice per apple in each run (once per section) into two looping steps, 'Cut a section from the apple' and 'Cut slices from the section', each carrying a repeats field, rather than listing each pass as a separate step.",
+    "Collapsed the long sequences of individually numbered slice cuts (up to twelve per section in run2) into a single looping action within the 'Cut slices from the section' task, since each cut followed the same pattern.",
+    "Demoted run1's 'Establish cutting technique' task (a single narrated aside about starting from the bigger end of the section) into an action within the 'Cut slices from the section' task, since it is a technique note rather than a distinct unit of work.",
+    "Demoted run2's 'Maintaining knife and checking technique' step (scraping the blade against the slices as a self-check) into the 'Check and tidy the slices' task, merging it with the tidying decision point since it is the same physical action performed for a dual purpose.",
+    "Folded run1's 'Check cut sizes while cutting' task and run2/run3's standalone inspection asides ('Further inspection and slice judgment', 'Handling bruised piece') into decision points and actions within 'Cut slices from the section', since each was a single in-line judgment call rather than a separate phase of work.",
+    "Standardized differing step and task names across runs (e.g. 'Section the apple', 'Cut a section from the apple', 'Divide the section into smaller pieces') into the canonical steps 'Cut a section from the apple' and 'Cut slices from the section', and applied canonical nouns (section, core piece, slice, scrap) throughout.",
+    "Merged run1's 'Trim scrap from the remaining piece' and 'Conclude the slicing' tasks with run3's trimming actions under 'Divide the section into smaller pieces' into a single 'Trim scrap from the section' task, since all describe removing scrap material from a section before or during slicing.",
+    "Retained 'Clear the board' as the standard closing step even though it was only fully demonstrated in run3; run1 left finished pieces on the board and run2 explicitly paused 'intending to do another run', so this step's observed_in_runs reflects a single full demonstration while still representing the logical end of the procedure."
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "step": "Cut a section from the apple",
+    "task": "Position apple and make first cut",
+    "action": "The operator holds the whole apple against the board with the left hand while bringing the knife blade into position with the right hand beside it.",
+    "start_sec": 2,
+    "end_sec": 3,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut a section from the apple",
+    "task": "Position apple and make first cut",
+    "action": "The operator presses the knife straight down through the apple with the right hand while the left hand steadies the apple, cutting a section away from the core piece.",
+    "start_sec": 3,
+    "end_sec": 4,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut a section from the apple",
+    "task": "Set aside the core piece",
+    "action": "The operator lifts the freshly cut core piece away with the left hand and sets it down on the counter to the left of the board, leaving the remaining section under the knife.",
+    "start_sec": 4,
+    "end_sec": 5,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut the section into slices",
+    "task": "Cut slices from the section",
+    "action": "The operator holds the section upright on its cut face with the fingers of the left hand and draws the knife down through it with the right hand, cutting the first slice free.",
+    "start_sec": 5,
+    "end_sec": 9,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut the section into slices",
+    "task": "Cut slices from the section",
+    "action": "The operator repositions the section in the left hand and again draws the knife down through it with the right hand, cutting a second slice that falls beside the first.",
+    "start_sec": 9,
+    "end_sec": 11,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut the section into slices",
+    "task": "Cut slices from the section",
+    "action": "The operator steadies the shrinking section between the fingers of the left hand and presses the knife straight down through it, cutting a third slice from the section.",
+    "start_sec": 11,
+    "end_sec": 13,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut the section into slices",
+    "task": "Cut slices from the section",
+    "action": "The operator repeats short downward cuts through the remaining section, the left hand rotating and steadying the shrinking piece after each cut, until it is reduced to a fan of six slices on the board.",
+    "start_sec": 13,
+    "end_sec": 15,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear and arrange the slices",
+    "task": "Consolidate the cut slices",
+    "action": "The operator lays the flat of the knife blade against the fanned slices and presses them together with the right hand while the left hand holds them in place, squaring up the stack.",
+    "start_sec": 15,
+    "end_sec": 16,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear and arrange the slices",
+    "task": "Consolidate the cut slices",
+    "action": "The operator uses the fingers of the left hand to push the slices further into the top right corner of the board while the right hand lifts the knife clear.",
+    "start_sec": 16,
+    "end_sec": 17,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear and arrange the slices",
+    "task": "Consolidate the cut slices",
+    "action": "The operator continues sweeping the slices with the left hand, consolidating them into a single cluster in the corner of the board.",
+    "start_sec": 17,
+    "end_sec": 18,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear and arrange the slices",
+    "task": "Consolidate the cut slices",
+    "action": "The operator withdraws the left hand from the board, leaving the six slices clustered in the top right corner.",
+    "start_sec": 18,
+    "end_sec": 19,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear and arrange the slices",
+    "task": "Finish the process",
+    "action": "The operator leaves the knife resting on the counter beside the board, with the core piece at the left edge and the cut slices grouped in the corner, marking the end of the cutting process.",
+    "start_sec": 19,
+    "end_sec": 21,
+    "condition": null,
+    "condition_response": null
+  }
+]

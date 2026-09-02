@@ -1,0 +1,38 @@
+[
+  {
+    "step": "Preparation",
+    "task": "Select apple",
+    "action": "The operator identifies the apple as theirs.",
+    "start_sec": 0.0,
+    "end_sec": 10.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Cut apple",
+    "action": "The operator cuts the apple like this.",
+    "start_sec": 10.0,
+    "end_sec": 15.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting",
+    "task": "Cut apple",
+    "action": "The operator judges the cut to be fine.",
+    "start_sec": 15.0,
+    "end_sec": 17.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Completion",
+    "task": "Confirm result",
+    "action": "The operator confirms that it should be good.",
+    "start_sec": 17.0,
+    "end_sec": 17.0,
+    "condition": null,
+    "condition_response": null
+  }
+]
