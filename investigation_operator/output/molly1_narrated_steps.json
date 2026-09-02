@@ -1,0 +1,119 @@
+[
+  {
+    "step": "Preparing the Apple",
+    "task": "Inspecting the Apple",
+    "action": "The operator picks up the apple and examines it, noticing a bruised spot on one side.",
+    "start_sec": 0.0,
+    "end_sec": 12.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Preparing the Apple",
+    "task": "Inspecting the Apple",
+    "action": "The operator decides to cut on the bruised side first.",
+    "start_sec": 0.0,
+    "end_sec": 12.0,
+    "condition": "a little bruised spot on the apple",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Preparing the Apple",
+    "task": "Inspecting the Apple",
+    "action": "The operator decides the spot is actually just frost rather than a bruise and treats it as fine.",
+    "start_sec": 0.0,
+    "end_sec": 12.0,
+    "condition": "the spot appearing to be frost rather than a bruise",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Establishing Cutting Technique",
+    "action": "The operator cuts the apple one piece at a time.",
+    "start_sec": 12.0,
+    "end_sec": 28.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Establishing Cutting Technique",
+    "action": "The operator starts cutting from the bigger end.",
+    "start_sec": 12.0,
+    "end_sec": 28.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Establishing Cutting Technique",
+    "action": "The operator avoids cutting from the other side because it makes it hard to clip properly and see the size of the cut being made.",
+    "start_sec": 12.0,
+    "end_sec": 28.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Checking Cut Sizes While Cutting",
+    "action": "The operator looks on both sides of the knife to check the size of the cut.",
+    "start_sec": 28.0,
+    "end_sec": 40.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Checking Cut Sizes While Cutting",
+    "action": "The operator confirms the cut is the right size.",
+    "start_sec": 28.0,
+    "end_sec": 40.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Checking Cut Sizes While Cutting",
+    "action": "The operator makes the small cut.",
+    "start_sec": 28.0,
+    "end_sec": 40.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Checking Cut Sizes While Cutting",
+    "action": "The operator checks as she goes along, looking at her knife.",
+    "start_sec": 28.0,
+    "end_sec": 40.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Checking Cut Sizes While Cutting",
+    "action": "The operator notices that one cut is starting to get bigger but judges it still within the tolerance range and continues cutting the same way.",
+    "start_sec": 40.0,
+    "end_sec": 51.0,
+    "condition": "a cut starting to get bigger",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Checking Cut Sizes While Cutting",
+    "action": "The operator checks the cuts overall and judges them to be pretty even.",
+    "start_sec": 51.0,
+    "end_sec": 58.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting the Apple",
+    "task": "Finishing the Cutting",
+    "action": "The operator notices the piece getting small on one side and stops, choosing not to cut that last piece.",
+    "start_sec": 58.0,
+    "end_sec": 65.0,
+    "condition": "the piece getting small on one side",
+    "condition_response": "adjusted"
+  }
+]

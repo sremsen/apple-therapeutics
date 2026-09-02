@@ -1,0 +1,65 @@
+[
+  {
+    "step": "Inspecting apple",
+    "task": "Assessing surface condition",
+    "action": "The operator notices a weird patch on the apple, identifies it as frost burn, and decides it won't affect the cutting.",
+    "start_sec": 0.0,
+    "end_sec": 9.0,
+    "condition": "weird patch that looks like frost burn",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cutting apple into pieces",
+    "task": "Making initial cuts",
+    "action": "The operator makes a cut in the apple.",
+    "start_sec": 9.0,
+    "end_sec": 19.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting apple into pieces",
+    "task": "Making initial cuts",
+    "action": "The operator cuts the apple in half.",
+    "start_sec": 9.0,
+    "end_sec": 19.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting apple into pieces",
+    "task": "Making initial cuts",
+    "action": "The operator cuts the apple again in a different way.",
+    "start_sec": 9.0,
+    "end_sec": 19.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting apple into pieces",
+    "task": "Adjusting cutting approach",
+    "action": "The operator decides to cut the apple from this side instead.",
+    "start_sec": 25.0,
+    "end_sec": 25.0,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cutting apple into pieces",
+    "task": "Evaluating final piece",
+    "action": "The operator notices that this piece is a little too thin but does not change anything further.",
+    "start_sec": 25.0,
+    "end_sec": 25.0,
+    "condition": "piece is a little too thin",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cutting apple into pieces",
+    "task": "Evaluating final piece",
+    "action": "The operator finishes cutting this apple.",
+    "start_sec": 25.0,
+    "end_sec": 25.0,
+    "condition": null,
+    "condition_response": null
+  }
+]

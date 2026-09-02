@@ -1,0 +1,389 @@
+[
+  {
+    "step": "Section the apple",
+    "task": "Align and cut the first section",
+    "action": "The operator holds the apple in their left hand and holds the knife in their right hand beside it, positioning the blade against the side of the apple without yet cutting.",
+    "start_sec": 0,
+    "end_sec": 1,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Align and cut the first section",
+    "action": "The operator rotates the apple in their left hand so the stem points downward, repositioning it against the stationary blade held in their right hand.",
+    "start_sec": 1,
+    "end_sec": 2,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Align and cut the first section",
+    "action": "The operator presses the knife blade into the top of the apple beside the stem and draws it downward and inward, following the curve of the apple's side to begin separating a section.",
+    "start_sec": 2,
+    "end_sec": 4,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Align and cut the first section",
+    "action": "The operator continues drawing the blade down through the apple to the board, completing the cut and separating the first section from the core piece.",
+    "start_sec": 4,
+    "end_sec": 6,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Inspect and set aside the core piece",
+    "action": "The operator lifts the piece bearing the stem in their left hand and turns it to view the pale cut face, holding the knife stationary at the right edge of the board with their right hand.",
+    "start_sec": 6,
+    "end_sec": 7,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Inspect and set aside the core piece",
+    "action": "The operator continues to hold the stemmed core piece up, turning it slightly to inspect the cut face, while the knife remains resting at the right edge of the board.",
+    "start_sec": 7,
+    "end_sec": 8,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Inspect and set aside the core piece",
+    "action": "The operator sets the stemmed core piece down at the top-left of the board and presses down on the newly cut section at the centre of the board with their right hand to steady it.",
+    "start_sec": 8,
+    "end_sec": 9,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator holds the section upright in their left hand, bracing it with their fingers, and draws the knife down along one rounded edge, shaving away a thin scrap that falls onto the board.",
+    "start_sec": 9,
+    "end_sec": 12,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator repositions the section in their left hand and draws the blade down along the opposite edge, cutting a second thin scrap free onto the board.",
+    "start_sec": 12,
+    "end_sec": 15,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator holds the section upright on its cut face and draws the blade down through it in a single stroke, cutting the first slice and letting it fall to the right.",
+    "start_sec": 15,
+    "end_sec": 16,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator repositions the section slightly with their left hand and draws the blade down again, cutting a second slice that joins the first in a fan shape.",
+    "start_sec": 16,
+    "end_sec": 17,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator draws the blade down through the section once more, cutting a third slice and adding it to the fan on the board.",
+    "start_sec": 17,
+    "end_sec": 18,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator sweeps the fingers of their right hand across the fanned slices to straighten their arrangement before returning to the knife.",
+    "start_sec": 18,
+    "end_sec": 19,
+    "condition": "the cut slices are lying unevenly on the board",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator draws the blade down through the section again, cutting a fourth slice onto the fan.",
+    "start_sec": 19,
+    "end_sec": 20,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator cuts a fifth slice from the section, drawing the blade down in one stroke while bracing the section with their left hand.",
+    "start_sec": 20,
+    "end_sec": 21,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator cuts a sixth slice from the remaining section, which has grown noticeably smaller in their left hand.",
+    "start_sec": 21,
+    "end_sec": 22,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator lays the flat of the blade against the fanned slices and pushes them gently together to tidy the pile.",
+    "start_sec": 22,
+    "end_sec": 23,
+    "condition": "the slices have splayed apart on the board",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator draws the blade down through the last of the section, cutting a seventh slice.",
+    "start_sec": 23,
+    "end_sec": 24,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator cuts an eighth slice from the final remnant of the section, holding the small remaining piece between their fingertips.",
+    "start_sec": 24,
+    "end_sec": 27,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator picks up a thin scrap piece from the centre of the board with their left hand and sets it down at the far left edge, away from the slices.",
+    "start_sec": 27,
+    "end_sec": 29,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the first section",
+    "action": "The operator lays the flat of the blade against the fan of slices and aligns them at the right side of the board.",
+    "start_sec": 29,
+    "end_sec": 30,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Cut the second section from the core piece",
+    "action": "The operator lifts the core piece from the top-left of the board with their left hand and turns it to present an uncut, rounded face to the blade.",
+    "start_sec": 30,
+    "end_sec": 31,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Cut the second section from the core piece",
+    "action": "The operator presses the knife into the top of the core piece and draws it downward, beginning to separate a new section.",
+    "start_sec": 31,
+    "end_sec": 32,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Cut the second section from the core piece",
+    "action": "The operator completes the downward stroke, separating the new section from the core piece and setting the core piece down to the left on the board.",
+    "start_sec": 32,
+    "end_sec": 33,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator holds the new section in their left hand, cut face up, and draws the blade down along one edge, cutting away a thin scrap of skin onto the board.",
+    "start_sec": 33,
+    "end_sec": 35,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator repositions the section and draws the blade down along the opposite edge, cutting a second scrap free.",
+    "start_sec": 35,
+    "end_sec": 37,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator turns the section in their left hand and draws the blade down through it, trimming a further thin scrap and exposing more flesh.",
+    "start_sec": 37,
+    "end_sec": 39,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator continues trimming with a short downward draw of the blade, removing another sliver of skin from the section.",
+    "start_sec": 39,
+    "end_sec": 41,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator draws the blade down through the section once more, removing a final scrap and squaring off the section's shape.",
+    "start_sec": 41,
+    "end_sec": 43,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator holds the trimmed section upright in their left hand and draws the blade down through it, cutting the first slice and adding it to the fan on the right.",
+    "start_sec": 44,
+    "end_sec": 45,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a second slice from the section in the same manner, letting it fall against the growing fan.",
+    "start_sec": 45,
+    "end_sec": 47,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a third slice from the section, repositioning it slightly in their left hand between strokes.",
+    "start_sec": 47,
+    "end_sec": 49,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a fourth slice from the section, drawing the blade down in a single stroke.",
+    "start_sec": 49,
+    "end_sec": 51,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a fifth slice from the section, which has become visibly smaller in their left hand.",
+    "start_sec": 51,
+    "end_sec": 53,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a sixth slice from the section, bracing the remaining piece against the board with their fingertips.",
+    "start_sec": 53,
+    "end_sec": 55,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a seventh slice from the section, drawing the blade down in one continuous stroke.",
+    "start_sec": 55,
+    "end_sec": 57,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts an eighth slice from the remaining section, holding it steady with their left hand.",
+    "start_sec": 57,
+    "end_sec": 59,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a ninth slice from the section, the piece now reduced to a narrow wedge.",
+    "start_sec": 59,
+    "end_sec": 61,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a tenth slice from the section, drawing the blade down through the thinning piece.",
+    "start_sec": 61,
+    "end_sec": 63,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts an eleventh slice from the diminishing section, holding the last of it pinched between their fingers.",
+    "start_sec": 63,
+    "end_sec": 65,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator cuts a twelfth and final slice from the remaining sliver of the section, completing the fan of slices.",
+    "start_sec": 65,
+    "end_sec": 67,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator sweeps their right hand across the fan of slices to settle them together at the right side of the board.",
+    "start_sec": 67,
+    "end_sec": 69,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut sections into slices",
+    "task": "Trim and slice the second section",
+    "action": "The operator sets the knife down across the lower part of the board and withdraws both hands, leaving the fan of slices, the scrap pieces, and the empty core piece in place.",
+    "start_sec": 69,
+    "end_sec": 71,
+    "condition": null,
+    "condition_response": null
+  }
+]

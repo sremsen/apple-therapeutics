@@ -1,0 +1,227 @@
+[
+  {
+    "step": "Section the apple",
+    "task": "Free the first section from the apple",
+    "action": "The operator holds a just-severed piece of apple in their left hand, its pale cut face turned upward, while withdrawing the knife blade in their right hand to the side.",
+    "start_sec": 2,
+    "end_sec": 3,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the first section from the apple",
+    "action": "The operator turns the piece slightly against their curled fingers and brings the knife blade back to its edge, pressing to start a new cut.",
+    "start_sec": 3,
+    "end_sec": 4,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the first section from the apple",
+    "action": "The operator completes the downward cut, separating a small piece, and shifts their grip to hold the rounder remaining piece in their palm.",
+    "start_sec": 4,
+    "end_sec": 5,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator repositions their left hand to cradle the larger body of the apple, presenting an uncut face toward the blade.",
+    "start_sec": 5,
+    "end_sec": 6,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator holds the apple steady against their fingers and brings the knife blade down along the side of the core with their right hand, beginning to cut a section free.",
+    "start_sec": 6,
+    "end_sec": 8,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator draws the blade down through the apple, separating a section, and lifts the two parts apart slightly to check the cut.",
+    "start_sec": 8,
+    "end_sec": 9,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator rotates the apple in their left hand, presenting a new uncut face toward the knife.",
+    "start_sec": 9,
+    "end_sec": 11,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator presses the knife blade straight down through the top of the piece in a single stroke, cutting another section away.",
+    "start_sec": 11,
+    "end_sec": 13,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator pulls the newly cut piece apart with their fingers, holding one part up while the other, larger section drops toward the board.",
+    "start_sec": 13,
+    "end_sec": 14,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Section the apple",
+    "task": "Free the second section from the apple",
+    "action": "The operator sets the larger section down on the upper-left area of the board, skin side up, and keeps the smaller remaining piece in hand.",
+    "start_sec": 14,
+    "end_sec": 15,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator cradles the section in their left hand with a brown blemish on its skin facing up, and presses the knife blade down through the near edge to cut a first slice, letting it drop toward the board.",
+    "start_sec": 16,
+    "end_sec": 20,
+    "condition": "a brown blemish is visible on the section's skin",
+    "condition_response": "dismissed"
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator rotates the section slightly against their curled fingers to present a fresh face and draws the blade down to cut a second slice.",
+    "start_sec": 20,
+    "end_sec": 24,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator steadies the section against their fingers and presses the blade straight down to cut a third slice, adding it to the small fan forming on the board.",
+    "start_sec": 24,
+    "end_sec": 28,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator turns the section again in their left hand and draws the knife through it with their right to cut a fourth slice.",
+    "start_sec": 28,
+    "end_sec": 32,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator cuts a fifth slice from the section, guiding it off the blade to join the others fanned on the right side of the board.",
+    "start_sec": 32,
+    "end_sec": 36,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator holds the thinning section between thumb and fingers and cuts a sixth slice with a short downward stroke of the blade.",
+    "start_sec": 36,
+    "end_sec": 40,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator repositions the shrinking piece in their fingers and cuts a seventh slice free.",
+    "start_sec": 40,
+    "end_sec": 44,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator cuts an eighth slice from the remaining piece, adding it to the growing pile of slices in the upper right of the board.",
+    "start_sec": 44,
+    "end_sec": 48,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Tidy the accumulating slices",
+    "action": "The operator uses the flat of the knife blade to nudge the fanned slices into a tighter row on the board.",
+    "start_sec": 48,
+    "end_sec": 51,
+    "condition": "the cut slices are spreading unevenly across the board",
+    "condition_response": "adjusted"
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator holds the small remaining wedge of the section between their fingers and cuts a ninth slice, drawing the blade down through it.",
+    "start_sec": 51,
+    "end_sec": 55,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Cut slices from the section",
+    "task": "Cut slices from the section held in hand",
+    "action": "The operator cuts a tenth slice from the remaining sliver of the section, leaving only a small remnant in hand.",
+    "start_sec": 55,
+    "end_sec": 59,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear scrap and finish",
+    "task": "Trim scrap from the remaining piece",
+    "action": "The operator pulls a thin white strip of scrap away from the remnant piece and sets it aside on the board, separate from the fanned slices.",
+    "start_sec": 59,
+    "end_sec": 61,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear scrap and finish",
+    "task": "Trim scrap from the remaining piece",
+    "action": "The operator holds the small remaining piece of the section up to inspect it, then sets it down at the lower left of the board apart from the slices.",
+    "start_sec": 61,
+    "end_sec": 63,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear scrap and finish",
+    "task": "Conclude the slicing",
+    "action": "The operator holds a final cut slice between their fingers and places it down among the others in the fanned pile.",
+    "start_sec": 63,
+    "end_sec": 65,
+    "condition": null,
+    "condition_response": null
+  },
+  {
+    "step": "Clear scrap and finish",
+    "task": "Conclude the slicing",
+    "action": "The operator withdraws both hands from the board, leaving the untouched first section, the discarded scrap, and the fan of slices in place, with the knife resting to the right.",
+    "start_sec": 65,
+    "end_sec": 67,
+    "condition": null,
+    "condition_response": null
+  }
+]
