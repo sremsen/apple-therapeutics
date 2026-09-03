@@ -19,7 +19,7 @@ SOP_DIR = INVESTIGATION / "sops"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _config import (MODEL, MAX_TOKENS, EFFORT, VOCABULARY,  # noqa: E402
-                     require_api_key)
+                     parse_json_response, require_api_key)
 
 # One person three times against three people once each. The prompt is told
 # which, because "every run did this" means something different in each case.
@@ -187,7 +187,7 @@ def synthesize(client, group: str, runs: dict[str, list]) -> dict:
 
     usage = response.usage
     print(f"    tokens in={usage.input_tokens:,} out={usage.output_tokens:,}")
-    return json.loads(next(b.text for b in response.content if b.type == "text"))
+    return parse_json_response(response)
 
 
 def main() -> int:

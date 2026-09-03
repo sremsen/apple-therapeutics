@@ -60,8 +60,11 @@ def find_frame(step_name: str, runs: list[str],
     target = keywords(step_name)
     scored: list[tuple[float, str, dict]] = []
     for video_id in runs:
-        rows = json.loads((OUTPUT_DIR / f"{video_id}_merged_steps.json").read_text())
-        for row in rows:
+        path = OUTPUT_DIR / f"{video_id}_merged_steps.json"
+        if not path.exists():
+            raise SystemExit(f"error: {path.name} missing. Run "
+                             "pipeline/03_reconcile_steps.py first.")
+        for row in json.loads(path.read_text()):
             if row["start_sec"] <= 0:
                 continue
             score = len(target & keywords(row["step"])) / len(target)

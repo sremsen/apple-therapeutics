@@ -3,6 +3,7 @@ prompt, but the vocabulary and the row shape live here so the outputs stay
 comparable.
 """
 
+import json
 import os
 from pathlib import Path
 
@@ -34,6 +35,24 @@ def require_api_key() -> bool:
     print("error: ANTHROPIC_API_KEY not set. Put it in .env as:\n"
           "  ANTHROPIC_API_KEY=sk-ant-...")
     return False
+
+
+def parse_json_response(response) -> dict:
+    """Parse a structured response, failing loudly if it was cut short.
+
+    Without this a truncated or refused response surfaces as a bare
+    JSONDecodeError, after the call has already been paid for.
+    """
+    if response.stop_reason not in (None, "end_turn", "stop_sequence"):
+        raise SystemExit(
+            f"error: the model stopped early (stop_reason="
+            f"{response.stop_reason!r}), so the response is incomplete.\n"
+            f"       If that is max_tokens, raise MAX_TOKENS in _config.py "
+            f"(currently {MAX_TOKENS:,}).")
+    text = next((b.text for b in response.content if b.type == "text"), None)
+    if text is None:
+        raise SystemExit("error: the response carried no text block.")
+    return json.loads(text)
 
 
 # Given to the frames pass and the reconcile pass, withheld from the narrated

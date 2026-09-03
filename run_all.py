@@ -16,10 +16,20 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Checked here because this file is the front door and stays 3.9-parseable. The
+# stages themselves use `X | None` annotations, which are a syntax error earlier.
+if sys.version_info < (3, 10):
+    sys.exit("error: needs Python 3.10 or newer, found "
+             f"{sys.version_info.major}.{sys.version_info.minor}")
+
 ROOT = Path(__file__).resolve().parent
 PY = sys.executable
 
 NEEDS_VIDEO = "source videos (not committed - too large for git)"
+
+# Must match VIDEO_SUFFIXES in 00_prepare_videos.py, or run_all reports "no
+# videos" for a directory that stage 00 would happily process.
+VIDEO_SUFFIXES = {".mov", ".mp4", ".m4v", ".avi", ".mkv"}
 NEEDS_KEY = "ANTHROPIC_API_KEY (these stages call the API and cost money)"
 NEEDS_FRAMES = "extracted frames, which need the source videos"
 
@@ -73,14 +83,17 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--analysis", action="store_true",
-                    help="only stages needing no API key and no video")
+                    help="skip the stages that need an API key or the source videos")
     ap.add_argument("--force", action="store_true", help="redo work already done")
     ap.add_argument("--dry-run", action="store_true", help="show the plan, run nothing")
     args = ap.parse_args()
 
     key = have_key()
-    video = any((ROOT / "investigation_operator/original_videos").glob("*.MOV")) if (ROOT / "investigation_operator/original_videos").is_dir() else False
-    frames = any((ROOT / "investigation_operator/frames").iterdir()) if (ROOT / "investigation_operator/frames").is_dir() else False
+    source_dir = ROOT / "investigation_operator/original_videos"
+    frame_dir = ROOT / "investigation_operator/frames"
+    video = source_dir.is_dir() and any(
+        p.suffix.lower() in VIDEO_SUFFIXES for p in source_dir.iterdir())
+    frames = frame_dir.is_dir() and any(frame_dir.iterdir())
 
     print("What this machine has")
     for label, ok, note in (("source videos", video, "extraction stages need these"),
@@ -91,12 +104,12 @@ def main() -> int:
     plan, skipped = [], []
     for script, need, produces, cost in STAGES:
         why = blocker(need, key, video, frames)
-        if args.analysis and need is not None:
+        # Frames are committed, so a frames-only stage (06) still runs here.
+        if args.analysis and need is not None and ("key" in need or "video" in need):
             # Name what the stage actually needs. 06 needs frames, not a key,
             # and saying otherwise sends you looking for the wrong thing.
             wants = {"key": NEEDS_KEY, "video": NEEDS_VIDEO,
-                     "key+frames": f"{NEEDS_KEY}; also {NEEDS_FRAMES}",
-                     "frames": NEEDS_FRAMES}[need]
+                     "key+frames": f"{NEEDS_KEY}; also {NEEDS_FRAMES}"}[need]
             why = f"--analysis: needs {wants}"
         (skipped if why else plan).append((script, produces, cost, why))
 

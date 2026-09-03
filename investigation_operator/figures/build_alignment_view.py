@@ -46,33 +46,9 @@ def flatten(sop):
     return out
 
 
-def stage_badges(sop, track):
-    """Map task index -> (stage name, evidence), found rather than typed in.
-
-    read_stages() picks the sentence carrying each stage; this finds the task it
-    lives in, so a regenerated SOP moves the label instead of stranding it.
-    """
-    badges, correct = {}, {}
-    for row in read_stages(sop):
-        if not row["match"]:
-            continue
-        for i, task in enumerate(track):
-            in_actions = row["match"] in task["actions"]
-            in_decisions = any(d["r"] == row["match"] for d in task["decisions"])
-            if not (in_actions or in_decisions):
-                continue
-            if row["name"] == "Correct":
-                correct[i] = {"ok": row["present"], "text": row["evidence"]}
-            else:
-                badges[i] = (row["name"], row["evidence"])
-            break
-    return badges, correct
-
-
 def main():
     sops = load_sops()
     tracks = {k: flatten(sop) for k, sop in sops.items()}
-    badges = {k: stage_badges(sops[k], tracks[k]) for k in sops}
 
     # An unknown name means an SOP was regenerated and ALIGNMENT needs
     # revisiting. Worth stopping for, since a dropped column misstates the figure.
@@ -88,12 +64,7 @@ def main():
                 raise SystemExit(
                     f"error: ALIGNMENT names a {key} task that no longer exists: "
                     f"{name!r}\n       update ALIGNMENT in {Path(__file__).name}")
-            idx = index_of[key][name]
-            stage_badge, correct_badge = badges[key]
-            t = dict(tracks[key][idx])
-            t["stage"] = stage_badge.get(idx)
-            t["correct"] = correct_badge.get(idx)
-            col[key] = t
+            col[key] = tracks[key][index_of[key][name]]
         columns.append(col)
 
     totals = {k: {"actions": sum(len(t["actions"]) for t in v),
