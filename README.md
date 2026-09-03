@@ -2,7 +2,7 @@
 
 Apple Therapeutics is a fictional customer I invented to show how I would run an engagement as a Forward Deployed Engineer.
 
-They cut apple slices, and the cutting step fails their reproducibility gate: slice-width standard deviation has to be at or below 0.5 mm, and the pooled within-run figure is 0.664 mm. They cannot transfer the process to a second facility until that closes. This repo is the investigation — rule out the cheap variables, work out what the most consistent technician does differently, and write it into an SOP someone else can follow.
+They cut apple slices, and the cutting step fails their reproducibility gate: slice-width standard deviation has to be at or below 0.5 mm, and the pooled within-run figure is 0.664 mm. They cannot transfer the process to a second facility until that closes. This repo is the investigation - rule out the cheap variables, work out what the most consistent technician does differently, and write it into an SOP someone else can follow.
 
 ## What is real and what is not
 
@@ -12,17 +12,19 @@ So this is not a discovery that Molly is the better technician. That was the pre
 
 | Real | Synthetic |
 | --- | --- |
-| The six videos, and everything derived from them: transcripts, step breakdowns, both SOPs, the Word document | `runs.csv`, `slices.csv`, `lims_batches.csv`, `run_batch_map.csv` — the QA and LIMS numbers the investigation starts from |
+| The six videos, and everything derived from them: transcripts, step breakdowns, both SOPs, the Word document | `runs.csv`, `slices.csv`, `lims_batches.csv`, `run_batch_map.csv` - the QA and LIMS numbers the investigation starts from |
 
 ## What it found
 
 Apple variety does not explain the variation: the two varieties differ by 0.016 mm on a 4 mm target. The technician does.
 
-Molly runs a quality control loop on herself that the others do not. She turns the piece so a fresh face meets the blade, starts each section from the bigger end so the cut stays visible, checks slices against both sides of the knife, and removes any that came out too thin. The baseline procedure judges the slices too — and then keeps cutting the same way.
+Molly runs a quality control loop on herself that the others do not. She turns the piece so a fresh face meets the blade, starts each section from the bigger end so the cut stays visible, checks slices against both sides of the knife, and removes any that came out too thin. The baseline procedure judges the slices too - and then keeps cutting the same way.
 
 Most of that never appears in her narration. She turns the piece between cuts and pulls the first two halves apart to look at the cut face without mentioning either one across three runs. Those are ghost steps, and they only show up because the pipeline reads the frames and the audio separately, then reconciles them.
 
 ## Running it
+
+Needs Python 3.10 or newer.
 
 ```bash
 pip install -r requirements.txt
@@ -64,4 +66,4 @@ deliverables/                what the customer gets
   check_adoption.py          did adopting it actually reduce variation?
 ```
 
-The pipeline runs each video through two independent passes — one on the frames, one on the transcript — then reconciles them into a single breakdown where every action is tagged with which pass surfaced it. That tag is the point: an action only the frames saw is something the technician did without saying.
+The pipeline runs each video through two independent passes - one on the frames, one on the transcript - then reconciles them into a single breakdown where every action is tagged with which pass surfaced it. That tag is the point: an action only the frames saw is something the technician did without saying.
