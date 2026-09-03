@@ -80,8 +80,6 @@ print(src)
 
 
 # 3 -------------------------------------------------------------------------
-# load_sops() also re-checks that _stages.py still matches these SOPs, so a
-# regenerated SOP stops the analysis instead of silently changing the answer.
 sops = load_sops()
 
 

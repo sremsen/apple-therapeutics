@@ -19,7 +19,7 @@ OUTPUT_DIR = INVESTIGATION / "output"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _config import (MODEL, MAX_TOKENS, EFFORT,  # noqa: E402
-                     require_api_key, steps_schema)
+                     parse_json_response, require_api_key, steps_schema)
 
 
 # ============================================================================
@@ -118,10 +118,9 @@ def extract_steps(client, transcript: str) -> list[dict]:
     ) as stream:
         response = stream.get_final_message()
 
-    text = next(b.text for b in response.content if b.type == "text")
     usage = response.usage
     print(f"    tokens in={usage.input_tokens:,} out={usage.output_tokens:,}")
-    return json.loads(text)["actions"]
+    return parse_json_response(response)["actions"]
 
 
 def main() -> int:
